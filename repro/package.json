@@ -1,0 +1,7 @@
+{
+  "name": "laminar-tool-addition-repro",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node repro.mjs" },
+  "dependencies": { "@lmnr-ai/claude-code-proxy": "0.2.0" }
+}

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Colors and font from laminar.sh: near-black page, terracotta accent, Manrope. */
+@theme {
+  --color-bg: #171717;
+  --color-surface: #1f1f1f;
+  --color-fg: #f5f5f5;
+  --color-muted: #b0b0b0;
+  --color-line: rgb(255 255 255 / 0.14);
+  --color-accent: #e08e66;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+}

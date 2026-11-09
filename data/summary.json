@@ -1,0 +1,31 @@
+{
+  "testedOn": "2026-11-09",
+  "runs": 18,
+  "arms": [
+    {
+      "label": "Default (SDK 0.3.319)",
+      "turns": "5\u201311",
+      "spans": "2",
+      "toolSpans": "0",
+      "storedShare": "15%",
+      "medianCost": "$0.0047"
+    },
+    {
+      "label": "SDK pinned to 0.3.303",
+      "turns": "5\u201310",
+      "spans": "5\u201310",
+      "toolSpans": "4\u20138",
+      "storedShare": "81%",
+      "medianCost": "$0.0409"
+    },
+    {
+      "label": "ENABLE_TOOL_SEARCH=false",
+      "turns": "5\u201310",
+      "spans": "6\u201311",
+      "toolSpans": "4\u20139",
+      "storedShare": "82%",
+      "medianCost": "$0.0537"
+    }
+  ],
+  "workaroundNote": "Both restore every span, and both raised the agent's own bill on these runs: median cost per run went from $0.0047 to $0.0409 with the SDK pinned to 0.3.303, and to $0.0537 with ENABLE_TOOL_SEARCH=false. That's about 9x and 11x on small Haiku tasks, likely because tool definitions go back to being sent up front, though I didn't test that. A docs note saying to pin 0.3.303 would help new TypeScript users for now, but neither option is a real fix, and I measured no Python workaround."
+}
