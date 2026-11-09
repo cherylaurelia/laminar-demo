@@ -27,5 +27,5 @@
       "medianCost": "$0.0537"
     }
   ],
-  "workaroundNote": "Both restore every span, and both raised the agent's own bill on these runs: median cost per run went from $0.0047 to $0.0409 with the SDK pinned to 0.3.303, and to $0.0537 with ENABLE_TOOL_SEARCH=false. That's about 9x and 11x on small Haiku tasks, likely because tool definitions go back to being sent up front, though I didn't test that. A docs note saying to pin 0.3.303 would help new TypeScript users for now, but neither option is a real fix, and I measured no Python workaround."
+  "workaroundNote": "Both restore every span, and both raised SDK-reported cost on these runs: the median per run went from $0.0047 to $0.0409 with the SDK pinned to 0.3.303, and to $0.0537 with ENABLE_TOOL_SEARCH=false. That's about 9x and 11x on small Haiku tasks, likely because tool definitions go back to being sent up front, though I didn't test that. A docs note saying to pin 0.3.303 would help new TypeScript users for now, but neither option is a real fix, and I measured no Python workaround."
 }
